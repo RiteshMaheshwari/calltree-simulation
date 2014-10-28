@@ -2,7 +2,9 @@ from node import Node
 from tree import *
 import sys
 
+# dict with key being percentile value (10, 20, 30... 90) and value being the latency at that percentile
 latency_percentiles = {90:1000}
+# This is returned if dict above does not specify the percentile
 default_latency = 1
 
 nodes = int(sys.argv[1])
